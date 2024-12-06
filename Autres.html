@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autres</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+        }
+
+
+        .header {
+            position: relative;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            overflow: hidden;
+            justify-content: space-between;
+        }
+
+        .header video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .header .title {
+            font-size: 48px;
+            font-weight: bold;
+            z-index: 1;
+            position: absolute;
+            left: 10%;
+            top: 50%;
+            transform: translateY(-50%);
+            font-family: 'Traditional Arabic', serif;
+            color: #ffd700;
+        }
+
+        .header .title a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+
+        .nav {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            z-index: 1;
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            position: relative;
+            padding: 5px 10px;
+        }
+
+        .nav a::after {
+            content: '';
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            background-color: red;
+            bottom: -5px;
+            left: 0;
+        }
+
+        .header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+            z-index: 0;
+        }
+
+        .main {
+            position: relative;
+            padding: 50px 20px;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+            z-index: 0;
+        }
+
+        .main::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+            z-index: 1;
+        }
+
+        .main::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+            z-index: 1;
+        }
+
+        .main video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .description {
+            font-size: 18px;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border: 2px solid #ffd700;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            width: 80%;
+            max-width: 800px;
+            text-align: center;
+            z-index: 2;
+            position: relative;
+        }
+
+        .list-container {
+            text-align: left;
+            width: 80%;
+            max-width: 800px;
+            margin: 0 auto;
+            z-index: 2;
+            position: relative;
+        }
+
+        .list-item {
+            font-size: 20px;
+            color: #fff;
+            margin: 10px 0;
+            text-decoration: none;
+            display: block;
+            position: relative;
+            list-style: none;
+            text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+        }
+
+        .list-item::before {
+            content: '– ';
+            color: #ffd700;
+            margin-right: 10px;
+        }
+
+        .list-item:hover {
+            color: #00ff00;
+        }
+
+        .logo {
+            background-color: #00aaff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .footer {
+            padding: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <video autoplay muted loop>
+            <source src="Stars.mp4" type="video/mp4">
+        </video>
+        <div class="title">
+            <a href="https://www.youtube.com/@Fajr2099" target="_blank" title="Visitez la chaîne YouTube">
+                ﷺ
+            </a>
+        </div>
+        <nav class="nav">
+            <a href="Accueil.html">Accueil</a>
+            <a href="Défense de l'Islam.html">Défense de l'Islam</a>
+            <a href="Halal & Haram (Madhab & Salafiyya).html">Halal & Haram (Madhab & Salafiyya)</a>
+            <a href="Preuves de la Vérité.html">Preuves de la Vérité</a>
+            <a href="Autres.html">Autres</a>
+        </nav>
+    </header>
+    <main class="main">
+        <video autoplay muted loop>
+            <source src="Masjid.mp4" type="video/mp4">
+        </video>
+        <div class="description">
+            Ces documents ne peuvent pas être classés dans les autres catégories.
+        </div>
+        <div class="list-container">
+            <a href="https://docs.google.com/document/d/1EQJm360gXIUzi1Opxslfcpa7Zec3BnII/edit?usp=sharing&ouid=107784057356057358969&rtpof=true&sd=true" class="list-item" target="_blank">Les Histoires des Prophètes selon l'islam</a>
+            <a href="https://docs.google.com/document/d/1zq6B5CueBsAnxv7djM31lXFfY45AX0H5/edit?usp=sharing&ouid=107784057356057358969&rtpof=true&sd=true" class="list-item" target="_blank">Les seuls élus de l'univers ?</a>
+            <a href="https://docs.google.com/document/d/1R_8g7hvuKUa-QtqBvHDNsLlUMk0R5ZsZ/edit?usp=sharing&ouid=107784057356057358969&rtpof=true&sd=true" class="list-item" target="_blank">Most rewardful actions in islam</a>
+	    <a href="https://docs.google.com/document/d/1-dvtFg9qr0QB9T5X7GzPV-oSd_OawkMt/edit?usp=sharing&ouid=107784057356057358969&rtpof=true&sd=true" class="list-item" target="_blank">La Bida'a</a>
+	    <a href="https://docs.google.com/document/d/1wRuxYVqhzIb3MIdaLwKM445Y8xeIQPIA/edit?usp=sharing&ouid=107784057356057358969&rtpof=true&sd=true" class="list-item" target="_blank">Sunnah faciles à pratiquer</a>
+	    <a href="https://docs.google.com/document/d/1kJ3K_0SFpMCveSc3B-moWj-Z7lNr3Euj/edit?usp=sharing&ouid=107784057356057358969&rtpof=true&sd=true" class="list-item" target="_blank">L’inondation de Nuh (as) était-elle mondiale ou régionale ?</a>
+	    <a href="https://docs.google.com/document/d/18tMi47YopfNsQ0W1x65TJx0mPuW2Vsfr/edit?usp=sharing&ouid=107784057356057358969&rtpof=true&sd=true" class="list-item" target="_blank">Qu'est-ce que l'hypocrisie en islam ?</a>
+	    <a href="https://docs.google.com/document/d/1hg9bFTFvnxq9TQEqoo_m72wHlsmaP5jy/edit?usp=sharing&ouid=107784057356057358969&rtpof=true&sd=true" class="list-item" target="_blank">Les 10 actes nullifiant l'islam</a>
+	    <a href="https://docs.google.com/document/d/1MKof9n5RqXdYkHyABh8sPOOcG9npo84a/edit?usp=sharing&ouid=107784057356057358969&rtpof=true&sd=true" class="list-item" target="_blank">Définition du Tawhid</a>
+        </div>
+    </main>
+</body>
+
+</html>

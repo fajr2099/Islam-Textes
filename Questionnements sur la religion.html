@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnements sur la religion</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+        }
+
+        .header {
+            position: relative;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            overflow: hidden;
+            justify-content: space-between;
+        }
+
+        .header video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .header .title {
+            font-size: 48px;
+            font-weight: bold;
+            z-index: 1;
+            position: absolute;
+            left: 10%;
+            top: 50%;
+            transform: translateY(-50%);
+            font-family: 'Traditional Arabic', serif;
+            color: #ffd700;
+        }
+
+        .header .title a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+
+        .nav {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            z-index: 1;
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            position: relative;
+            padding: 5px 10px;
+        }
+
+        .nav a::after {
+            content: '';
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            background-color: red;
+            bottom: -5px;
+            left: 0;
+        }
+
+        .main {
+            position: relative;
+            padding: 50px 20px;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .main video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .description {
+            font-size: 18px;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border: 2px solid #ffd700;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            width: 80%;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .list-container {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .list {
+            width: 48%;
+        }
+
+        .list-item {
+            font-size: 20px;
+            color: #fff;
+            margin: 10px 0;
+            text-decoration: none;
+            display: block;
+            position: relative;
+            list-style: none;
+            text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+        }
+
+        .list-item::before {
+            content: '– ';
+            color: #ffd700;
+            margin-right: 10px;
+        }
+
+        .list-item:hover {
+            color: #00ff00;
+        }
+
+        .logo {
+            background-color: #00aaff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .footer {
+            padding: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <video autoplay muted loop>
+            <source src="Stars.mp4" type="video/mp4">
+        </video>
+        <div class="title">
+            <a href="https://www.youtube.com/@Fajr2099" target="_blank" title="Visitez la chaîne YouTube">
+                ﷺ
+            </a>
+        </div>
+        <nav class="nav">
+            <a href="Accueil.html">Accueil</a>
+            <a href="Défense de l'Islam.html">Défense de l'Islam</a>
+            <a href="Halal & Haram (Madhab & Salafiyya).html">Halal & Haram (Madhab & Salafiyya)</a>
+            <a href="Preuves de la Vérité.html">Preuves de la Vérité</a>
+            <a href="Autres.html">Autres</a>
+        </nav>
+    </header>
+    <main class="main">
+        <video autoplay muted loop>
+            <source src="Masjid.mp4" type="video/mp4">
+        </video>
+        <div class="description">
+            Ces documents explorent quelques questions que se posent les croyants comme les non-musulmans.
+        </div>
+        <div class="list-container">
+            <div class="list">
+                <a href="https://docs.google.com/document/d/1MPCCVWeuG5B6wPojGG84-5TJlTcLKN6N/edit?usp=sharing&ouid=107784057356057358969&rtpof=true&sd=true" class="list-item" target="_blank">Allah ﷻ a une forme humanoïde ?</a>
+                <a href="https://docs.google.com/document/d/1SRF37CsyJew2NLB8CY-tRNrnQeeXZR86/edit?usp=sharing&ouid=107784057356057358969&rtpof=true&sd=true" class="list-item" target="_blank">Allah ﷻ répond aux prières des non-musulmans ?</a>
+                <a href="https://docs.google.com/document/d/1k2PDJumytVHp5WbLkNmdSoppzQKn1Pem/edit?usp=sharing&ouid=107784057356057358969&rtpof=true&sd=true" class="list-item" target="_blank">Comment est-ce qu’on priait avant le prophète Muhammad ﷺ vu que l’Islam est universel ? </a>
+                <a href="https://docs.google.com/document/d/1-vKgBCKOZwlvY-9MbdXS2nwWraj1OJUP/edit?usp=sharing&ouid=107784057356057358969&rtpof=true&sd=true" class="list-item" target="_blank">Le Coran est-il éternel ? </a>
+                <a href="https://docs.google.com/document/d/1c2VaqAR4JZ7Scih2mvUMa_iOGYZCLWEg/edit?usp=sharing&ouid=107784057356057358969&rtpof=true&sd=true" class="list-item" target="_blank">Où est Allah ﷻ ? </a>
+                <a href="https://docs.google.com/document/d/17ij7u4ZywquK5uMCY1W_OtzZPmcpkiAs/edit?usp=sharing&ouid=107784057356057358969&rtpof=true&sd=true" class="list-item" target="_blank">Pourquoi Allah ﷻ a-t-il choisi un berger au milieu du désert ?</a>
+                <a href="https://docs.google.com/document/d/1JHYHkumThQn6UNAlGTbjEkrLk9uh9gAM/edit?usp=sharing&ouid=107784057356057358969&rtpof=true&sd=true" class="list-item" target="_blank">Comment Allah et les Entités Spirituelles Gèrent-ils les Pratiques et Événements Concurrentiels ?</a>
+            </div>
+            <div class="list">
+                <a href="https://docs.google.com/document/d/1XVt7vnhflMZL5ubGm_WiI97ge0pcCWRL/edit?usp=sharing&ouid=107784057356057358969&rtpof=true&sd=true" class="list-item" target="_blank">les filles de Lut (as)</a>
+                <a href="https://docs.google.com/document/d/1M2hDA78NW60oRAjC2uqyfzCUmNHbk_h9/edit?usp=sharing&ouid=107784057356057358969&rtpof=true&sd=true" class="list-item" target="_blank">Pourquoi est-ce qu'Allah ﷻ permet la malveillance de sévir sur Terre ?</a>
+                <a href="https://docs.google.com/document/d/1XTG2FbxkKhLteEveN9wDZytKLoPXT9qQ/edit?usp=sharing&ouid=107784057356057358969&rtpof=true&sd=true" class="list-item" target="_blank">Pourquoi est-ce qu'Allah ﷻ ne se montre pas ?</a>
+                <a href="https://docs.google.com/document/d/1eUnNUm5SW-epmTaWcSIwbLuzZU3gzKxu/edit?usp=sharing&ouid=107784057356057358969&rtpof=true&sd=true" class="list-item" target="_blank">Pourquoi est-ce que le Coran se répète-t-il autant ?</a>
+                <a href="https://docs.google.com/document/d/1gMx_vzHD3Uy28DYoQcx5wVMpjazLSW6d/edit?usp=sharing&ouid=107784057356057358969&rtpof=true&sd=true" class="list-item" target="_blank">Quelques questions invalides...</a>
+                <a href="https://docs.google.com/document/d/1lBp0fRK6RZgKWh3vwvctFiz04T0mbkZt/edit?usp=sharing&ouid=107784057356057358969&rtpof=true&sd=true" class="list-item" target="_blank">Un Coran arabe pour l’humanité toute entière ?</a>
+                <a href="https://docs.google.com/document/d/1oM8spkQgaM-BG3EqZAEfmNxDSD-y6jGf/edit?usp=sharing&ouid=107784057356057358969&rtpof=true&sd=true" class="list-item" target="_blank">L'humanité au centre de l'intêret divin ?</a>
+                <a href="https://docs.google.com/document/d/1AouH9ZERSujyPmjwTr2YfnmwBOw2M5IV/edit?usp=sharing&ouid=107784057356057358969&rtpof=true&sd=true" class="list-item" target="_blank">Allah est-il “narcissique” ?</a>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
+

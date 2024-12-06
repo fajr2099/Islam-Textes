@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halal & Haram</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+        }
+
+        .header {
+            position: relative;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            overflow: hidden;
+            justify-content: space-between;
+        }
+
+        .header video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .header .title {
+            font-size: 48px;
+            font-weight: bold;
+            z-index: 1;
+            position: absolute;
+            left: 10%;
+            top: 50%;
+            transform: translateY(-50%);
+            font-family: 'Traditional Arabic', serif;
+            color: #ffd700;
+        }
+
+        .header .title a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+
+        .nav {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            z-index: 1;
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            position: relative;
+            padding: 5px 10px;
+        }
+
+        .nav a::after {
+            content: '';
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            background-color: red;
+            bottom: -5px;
+            left: 0;
+        }
+
+        .header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+            z-index: 0;
+        }
+
+        .main {
+            position: relative;
+            padding: 50px 20px;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+            z-index: 0;
+        }
+
+        .main::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+            z-index: 1;
+        }
+
+        .main::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+            z-index: 1;
+        }
+
+        .main video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .description {
+            font-size: 18px;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border: 2px solid #ffd700;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            width: 80%;
+            max-width: 800px;
+            text-align: center;
+            z-index: 2;
+            position: relative;
+        }
+
+        .list-container {
+            text-align: left;
+            width: 80%;
+            max-width: 800px;
+            margin: 0 auto;
+            z-index: 2;
+            position: relative;
+        }
+
+        .list-item {
+            font-size: 20px;
+            color: #fff;
+            margin: 10px 0;
+            text-decoration: none;
+            display: block;
+            position: relative;
+            list-style: none;
+            text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+        }
+
+        .list-item::before {
+            content: '– ';
+            color: #ffd700;
+            margin-right: 10px;
+        }
+
+        .list-item:hover {
+            color: #00ff00;
+        }
+
+        .logo {
+            background-color: #00aaff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .footer {
+            padding: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <video autoplay muted loop>
+            <source src="Stars.mp4" type="video/mp4">
+        </video>
+        <div class="title">
+            <a href="https://www.youtube.com/@Fajr2099" target="_blank" title="Visitez la chaîne YouTube">
+                ﷺ
+            </a>
+        </div>
+        <nav class="nav">
+            <a href="Accueil.html">Accueil</a>
+            <a href="Défense de l'Islam.html">Défense de l'Islam</a>
+            <a href="Halal & Haram (Madhab & Salafiyya).html">Halal & Haram (Madhab & Salafiyya)</a>
+            <a href="Preuves de la Vérité.html">Preuves de la Vérité</a>
+            <a href="Autres.html">Autres</a>
+        </nav>
+    </header>
+    <main class="main">
+        <video autoplay muted loop>
+            <source src="Masjid.mp4" type="video/mp4">
+        </video>
+        <div class="description">
+            Ces documents examinent ce qui est halal (permis, qu'il s'agisse de fard, mustahabb, mubah ou makruh) et haram (interdit, donc un péché mineur ou majeur) en Islam, en se concentrant sur les situations ambiguës ou souvent débattues. Plutôt que de traiter des cas clairs, l'objectif est d'explorer les zones grises, ces pratiques ou interdits du quotidien qui suscitent des doutes ou des accusations d'extrémisme.
+
+Nous visons à clarifier ces points en nous appuyant sur les interprétations des quatre écoles de jurisprudence sunnites, en particulier les Malikites, tout en incluant les perspectives des Salafistes.
+        </div>
+        <div class="list-container">
+            <a href="https://docs.google.com/document/d/1RdDrLD7AyJ945hmqNtf9PEKbJxY8mgUE/edit?usp=sharing&ouid=107784057356057358969&rtpof=true&sd=true" class="list-item" target="_blank">Avoir un chien</a>
+            <a href="https://docs.google.com/document/d/16CEdSuYwufC5P04elrZQGx9Crgs3eTIz/edit?usp=sharing&ouid=107784057356057358969&rtpof=true&sd=true" class="list-item" target="_blank">Films & Animations</a>
+            <a href="https://docs.google.com/document/d/1SPxDQVi-aXddq_WIZtYKQB_Mu2mZEh4O/edit?usp=sharing&ouid=107784057356057358969&rtpof=true&sd=true" class="list-item" target="_blank">La Musique (Instruments musicaux) et la danse</a>
+            <a href="https://docs.google.com/document/d/1eu6rpFhqp030bkKmiC2vVraGRnnaGfSP/edit?usp=sharing&ouid=107784057356057358969&rtpof=true&sd=true" class="list-item" target="_blank">La Prière à la mosquée</a>
+            <a href="https://docs.google.com/document/d/18rC8FHg3mNzwBC95Rd11NPUDQuyQL47f/edit?usp=sharing&ouid=107784057356057358969&rtpof=true&sd=true" class="list-item" target="_blank">Le Rasage de la Barbe</a>
+            <a href="https://docs.google.com/document/d/1HtPpW2DXRFcpCqnPrOGdCmMzE8haFpnV/edit?usp=sharing&ouid=107784057356057358969&rtpof=true&sd=true" class="list-item" target="_blank">Les Jeux (échecs, dés, cartes)</a>
+            <a href="https://docs.google.com/document/d/1LJcUHaZu9zAtb06O-opP-UuL-Lov2rnt/edit?usp=sharing&ouid=107784057356057358969&rtpof=true&sd=true" class="list-item" target="_blank">Tasweer</a>
+            <a href="https://docs.google.com/document/d/1L8W9B-MrIsmP7ekfJmWgJ3Cqw53hw0ls/edit?usp=sharing&ouid=107784057356057358969&rtpof=true&sd=true" class="list-item" target="_blank">L'adoption</a>
+            <a href="https://docs.google.com/document/d/1rFCxi22bOVRzQftNyH0lOoRVzekB7-1T/edit?usp=sharing&ouid=107784057356057358969&rtpof=true&sd=true" class="list-item" target="_blank">Le Mariage entre cousins</a>
+            <a href="https://docs.google.com/document/d/1HO1DX2I8jiz5qFOsse4aLgiZn5eak_IX/edit?usp=sharing&ouid=107784057356057358969&rtpof=true&sd=true" class="list-item" target="_blank">Quelques règles sur le quotidien</a>
+        </div>
+    </main>
+</body>
+
+</html>
+
+
+
